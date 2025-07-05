@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    FILE *fp;
+    char filename[] = "myfile.txt";
+    char text[200];
+
+    // Step 1: Create a file and write some text
+    fp = fopen(filename, "w");  // Open file in write mode
+    if (fp == NULL) {
+        printf("Could not create the file.\n");
+        return 1;
+    }
+
+    printf("Enter some text to write to the file:\n");
+    fgets(text, sizeof(text), stdin);  // Read input from user
+    fputs(text, fp);  // Write to file
+    fclose(fp);  // Close the file
+    printf("Text written successfully to '%s'.\n", filename);
+
+    // Step 2: Append more text to the same file
+    fp = fopen(filename, "a");  // Open file in append mode
+    if (fp == NULL) {
+        printf("Could not open file to append.\n");
+        return 1;
+    }
+
+    printf("\nEnter some text to append to the file:\n");
+    fgets(text, sizeof(text), stdin);  // Read input
+    fputs(text, fp);  // Append to file
+    fclose(fp);
+    printf("Text appended successfully to '%s'.\n", filename);
+
+    // Step 3: Read the file and display its content
+    fp = fopen(filename, "r");  // Open file in read mode
+    if (fp == NULL) {
+        printf("Could not open file to read.\n");
+        return 1;
+    }
+
+    printf("\nContent of '%s':\n", filename);
+    while (fgets(text, sizeof(text), fp)) {
+        printf("%s", text);  // Print each line
+    }
+    fclose(fp);  // Close the file
+
+    return 0;
+}
