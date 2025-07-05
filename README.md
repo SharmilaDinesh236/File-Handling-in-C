@@ -12,7 +12,7 @@
 
 *MENTOR* : NEELA SANTOSH
 
-Objective:
+Description:
 To write a C program that demonstrates basic file operations, including
 
 Creating and writing to a file
