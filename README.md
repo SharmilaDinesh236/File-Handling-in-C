@@ -39,4 +39,8 @@ Then, we open the same file again in append mode, so the user can add more conte
 
 Finally, we read the full content from the file and display it back to the user.
 
+*OUTPUT* :
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/d280c191-2cbf-45ee-b504-d39c818d1be3" />
+
 
