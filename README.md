@@ -29,7 +29,7 @@ Editor	             :  VS Code
 
 Compiler	           : dev c++
 
-Operating System	   : Windows/linux
+Operating System	   : Windows
 
 Code Explanation :
 
