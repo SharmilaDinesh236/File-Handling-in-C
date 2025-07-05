@@ -13,7 +13,7 @@
 *MENTOR* : NEELA SANTOSH
 
 Objective:
-To write a C program that demonstrates basic file operations, including:
+To write a C program that demonstrates basic file operations, including
 
 Creating and writing to a file
 
@@ -21,10 +21,14 @@ Appending additional data to it
 
 Reading and displaying the content of the file
 
-Tool	Description
+Tool	Description : 
+
 Programming Language :	C 
+
 Editor	             :  VS Code
+
 Compiler	           : dev c++
+
 Operating System	   : Windows/linux
 
 Code Explanation :
