@@ -41,6 +41,6 @@ Finally, we read the full content from the file and display it back to the user.
 
 *OUTPUT* :
 
-
+<img width="1920" height="1017" alt="Image" src="https://github.com/user-attachments/assets/5eced3a6-8a67-4e60-97e5-72b31436bb20" />
 
 
